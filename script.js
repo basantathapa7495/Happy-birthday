@@ -1,14 +1,14 @@
 // Personalize these settings. Upload numbered JPG photos next to index.html.
 const CONFIG = {
-  sisterName: 'my lovely sister',
+  sisterName: 'Anjali DD',
   sender: 'Basanta',
-  photoCount: 20, // Checks 1.jpg through 20.jpg. Missing files are simply skipped.
-  captions: ['That beautiful smile', 'A little moment of joy', 'One to remember', 'Always shining', 'So much happiness', 'Simply you ♡']
+  photoCount: 2, // Loads 1.jpg and 2.jpg from the repository root.
+  captions: ['Our lovely Anjali DD ♡', 'Here’s to more happy moments']
 };
 const $ = id => document.getElementById(id);
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 $('sister-name').textContent = CONFIG.sisterName + '.';
-$('letter-name').textContent = CONFIG.sisterName === 'my lovely sister' ? 'sister,' : CONFIG.sisterName + ',';
+$('letter-name').textContent = CONFIG.sisterName + ',';
 $('sender').textContent = CONFIG.sender;
 let opening = false;
 async function openGift() {
